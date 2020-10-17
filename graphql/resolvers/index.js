@@ -4,5 +4,8 @@ const userResolver = require('./users');
 module.exports = {
     Query: {
         ...postsResolver.Query
+    },
+    Mutation: {
+        ...userResolver.Mutation
     }
 }
