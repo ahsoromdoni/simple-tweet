@@ -2,8 +2,7 @@ const { UserInputError } = require('apollo-server');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const { validateLoginInput } = require('../../util/validators');
-const { validateRegisterInput } = require('../../util/validators');
+const { validateLoginInput, validateRegisterInput } = require('../../util/validators');
 const { SECRET_KEY } = require('../../config');
 const User = require('../../models/User');
 
